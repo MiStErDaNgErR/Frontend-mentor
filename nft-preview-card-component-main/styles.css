@@ -1,0 +1,104 @@
+:root {
+    --oxford-blue: hsl(217, 54%, 11%);
+    --light-oxford-blue: hsl(216, 50%, 16%);
+    --indigo-dye: hsl(215, 32%, 27%);
+    --blue-yonder: hsl(216, 30%, 55%);
+    --aqua: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    background-color:hsl(217, 54%, 11%);
+    margin:none;
+    /* display:flex;
+    justify-content:center;
+    align-items:center; */
+    font-family: 'Outfit',sans-serif;
+    color:hsl(215, 19%, 42%);
+}
+.card{
+    background-color:hsl(216, 50%, 16%);
+    text-align:center;
+    max-width:350px;
+    padding:10px;
+    padding-top: 20px;
+    margin:5% auto ;
+    border-radius: 15px;
+     box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+                 0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+}
+.image{
+    border-radius: 5%;
+    position:relative;
+    width:320px;
+}
+.image:hover{
+    z-index: 90;
+}
+.image-equil div{
+    background-color: cyan;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    border-radius: 5%;
+    opacity: 0;
+    z-index:100;
+    width: 320px;
+    height: 320px;
+    margin-left: 14px;
+    transition: opacity 0.5s ease-in-out;
+}
+.image-equil div:hover{
+    opacity: 75%;
+    cursor: pointer;
+}
+  
+.image-equil{
+    position:relative;
+}
+
+   .overlay-img{
+       position: absolute;
+       top: 130px ;
+       left: 140px;
+       
+       
+   }
+
+.profile-img{
+    width:34px;
+    height:34px;
+    border-radius: 100%;
+    border: 2px solid;
+    border-color: white;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+h3{
+    color: white;
+    text-align:left;
+}
+h3:hover{
+    color: cyan;
+    cursor:pointer;
+}
+hr{
+    width:320px;
+    border:1px solid;
+    border-color: hsl(215, 19%, 42%);
+    border-radius: 5px;
+    border-bottom: none;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+a{
+    font-weight:500;
+    text-decoration:none;
+    color: white;
+}
+a:hover{
+    color: cyan;
+}
